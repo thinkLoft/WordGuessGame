@@ -15,21 +15,59 @@
 </head>
 
 <body>
-  <h1>This is the Hangman Game</h1>
-  <h2>Press any key to Get started</h2>
-  <br>
-  <br>
-  <div id="currentWord"></div>
-  <h3>Your wins:
-    <span id="wins"></span>
-  </h3>
-  <h3>Guesses Remaining:
-    <span id="guesses"></span>
-  </h3>
-  <h3>Your Last Input:
-    <span id="userKey"></span>
-  </h3>
+  <div class="container" style="text-align: center;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>This is the Hangman Game</h1>
+        <br>
+        <h2>Guess the last name of the artist</h2>
+        <h2>Press any key to Get started</h2>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Number of Words Left:
+          <span id="games"></span>
+        </h3>
+        <h3>Your wins:
+          <span id="wins"></span>
+        </h3>
+        <h3>Guesses Remaining:
+          <span id="guesses"></span>
+        </h3>
+        <h3>Your Last Input:
+          <span id="userKey"></span>
+        </h3>
+        <button type="button" class="btn btn-primary" onclick="toggleHints()">Quick Hint</button>
+        <span id="hints" style="display: none;">
+          <h3>These are the first names, guess the last</h3>
+          <ul>
+            <li>Taylor</li>
+            <li>Vybz</li>
+            <li>Tony</li>
+            <li>Kendrick</li>
+            <li>50</li>
+            <li>French</li>
+            <li>Drake</li>
+            <li>Kareem</li>
+            <li>Nicki</li>
 
+          </ul>
+        </span>
+      </div>
+      <div class="col-lg-6">
+        <div class="jumbotron">
+          <h1 class="display-4">Guess this word</h1>
+          <h3>
+            <div id="currentWord"></div>
+          </h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
 </body>
