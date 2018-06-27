@@ -153,8 +153,8 @@ function toggleHints() {
   var x = document.getElementById('hints');
   if (x.style.display === 'none') {
     x.style.display = 'block';
+    setTimeout(toggleHints, 5000);
   } else {
     x.style.display = 'none';
-    setTimeout(toggleHints, 5000);
   }
 }
